@@ -181,6 +181,11 @@ main.grid {
   }
 }
 
+header.flex {
+  justify-content: space-between;
+  position: relative;
+}
+
 .text-container {
   align-content: start;
   justify-items: center;
@@ -191,4 +196,33 @@ main.grid {
   padding: 1rem 1.365rem;
   border-radius: 1rem;
   text-decoration: none;
+}
+
+.side-menu {
+  position: fixed;
+  inset: 0 0 0 30%;
+  background-color: hsl( var(--clr-almost-white) );
+}
+
+.side-menu::before {
+  content: "";
+  background-color: hsl( var(--clr-almost-black) / 0.5);
+}
+
+.side-menu  li {
+  list-style: none;
+}
+
+.menu-icon {
+  z-index: 5;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  border: 0;
+  background-color: hsl( var(--clr-almost-white) );
+  background-image: url(./images/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
