@@ -14,6 +14,7 @@
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
+  <script src="./index.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -26,7 +27,7 @@
       <img src="./images/logo.svg" alt="snap logo">
     </div>
     <div class="transparent-bg">
-      <nav class="side-menu">
+      <nav class="side-menu text-gray" data-visible="false">
         <ul>
           <li>Features</li>
           <li>Company</li>
@@ -40,7 +41,7 @@
         </ul>
       </nav>
     </div>
-    <button class="menu-icon"><span class="sr-only">Menu</span></button>
+    <button class="menu-icon" aria-expanded="false"><span class="sr-only">Menu</span></button>
   </header>
 
   <main class="grid">
