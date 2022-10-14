@@ -29,15 +29,28 @@
     <div class="transparent-bg">
       <nav class="side-menu text-gray" data-visible="false">
         <ul>
-          <li>Features</li>
-          <li>Company</li>
+          <li><span data-collapse="false" id="features-text" class="flex align-center">Features <img id="features-icon" src="./images/icon-arrow-down.svg" alt="down arrow icon"></span>         
+              <ul id="features-sub-menu" class="collapse-sub-menu">
+                <li class="flex"><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+                <li class="flex"><img src="./images/icon-calendar.svg" alt=""> Calendar</li>
+                <li class="flex"><img src="./images/icon-reminders.svg" alt=""> Reminders</li>
+                <li class="flex"><img src="./images/icon-planning.svg" alt=""> Planning</li>
+              </ul>
+          </li>
+          <li><span data-collapse="false" id="company-text" class="flex align-center">Company <img id="company-icon" src="./images/icon-arrow-down.svg" alt="down arrow icon"></span>
+            <ul id="company-sub-menu" class="collapse-sub-menu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
           <li>Careers</li>
           <li>About</li>
         </ul>
   
-        <ul>
+        <ul class="flex">
           <li>Login</li>
-          <li>Register</li>
+          <li class="register-button">Register</li>
         </ul>
       </nav>
     </div>
