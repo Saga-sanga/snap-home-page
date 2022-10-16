@@ -172,7 +172,6 @@ select {
 
 main.grid {
   --gap: 2rem;
-  align-items: end;
   grid-template-rows: min-content 1fr;
 }
 
@@ -225,6 +224,10 @@ main.grid {
 
   .text-container h1 {
     font-size: 4rem;
+  }
+
+  .text-container h1 span {
+    display: block;
   }
 
   .text-container p {
@@ -343,6 +346,7 @@ header.flex {
 
 .transparent-bg {
   /* transform: translateX(-25px); */
+  margin-inline-start: -1.5rem;
   visibility: hidden;
   position: fixed;
   height: 100vh;
