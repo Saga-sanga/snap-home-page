@@ -22,7 +22,6 @@ menu_btn.addEventListener("click", () => {
     document.body.style.overflowY = "scroll";
     dark_menu_bg.style.visibility = "hidden";
   }
-  // console.log(document.body);
 })
 
 features.addEventListener("click", () => {
