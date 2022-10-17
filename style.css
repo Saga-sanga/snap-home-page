@@ -393,6 +393,10 @@ nav li {
   text-align: center;
 }
 
+.register-button:hover {
+  border-color: hsl( var(--clr-almost-black) );
+}
+
 .transparent-bg {
   transform: scale(3);
   margin-inline-start: -1.5rem;
