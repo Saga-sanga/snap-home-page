@@ -24,28 +24,34 @@ menu_btn.addEventListener("click", () => {
   }
 })
 
+const openSubMenu = (element, icon, display) => {
+  element.setAttribute("data-collapse", true);
+  icon.src = './images/icon-arrow-up.svg';
+  display.style.display = "block";
+}
+
+const closeSubMenu = (element, icon, display) => {
+  element.setAttribute("data-collapse", false);
+  icon.src = './images/icon-arrow-down.svg';
+  display.style.display = "none";
+}
+
 features.addEventListener("click", () => {
   let status = features.getAttribute("data-collapse");
   if (status === "false") {
-    features.setAttribute("data-collapse", true);
-    features_icon.src = './images/icon-arrow-up.svg';
-    features_sub_menu.style.display = "block";
+    openSubMenu(features, features_icon, features_sub_menu);
+    closeSubMenu(company, company_icon, company_sub_menu);
   } else {
-    features.setAttribute("data-collapse", false);
-    features_icon.src = './images/icon-arrow-down.svg';
-    features_sub_menu.style.display = "none";
+    closeSubMenu(features, features_icon, features_sub_menu);
   }
 })
 
 company.addEventListener("click", () => {
   let status = company.getAttribute("data-collapse");
   if (status === "false") {
-    company.setAttribute("data-collapse", true);
-    company_icon.src = './images/icon-arrow-up.svg';
-    company_sub_menu.style.display = "block";
+    openSubMenu(company, company_icon, company_sub_menu);
+    closeSubMenu(features, features_icon, features_sub_menu);
   } else {
-    company.setAttribute("data-collapse", false);
-    company_icon.src = './images/icon-arrow-down.svg';
-    company_sub_menu.style.display = "none";
+    closeSubMenu(company, company_icon, company_sub_menu);
   }
 })
